@@ -1,6 +1,8 @@
 satysfi-pubsub
 ==============
 
+[![Build Status](https://github.com/amutake/satysfi-pubsub/workflows/build/badge.svg)](https://github.com/amutake/satysfi-pubsub/actions?query=workflow%3Abuild)
+
 A simple Pub/Sub library for SATySFi.
 
 Example
