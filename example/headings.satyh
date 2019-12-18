@@ -1,0 +1,23 @@
+@import: ../pubsub
+
+type page-event = (|
+  page-number : int;
+  point : (length * length);
+  title : inline-text;
+|)
+
+module Headings : sig
+  val section-page-topic : page-event PubSub.topic
+  direct +section : [inline-text] block-cmd
+end = struct
+  let section-page-topic = PubSub.make ()
+  let-block ctx +section it =
+    let ctx = ctx |> set-paragraph-margin 20pt 20pt |> set-font-size 20pt in
+    let page-hook pbinfo point =
+      let e = (| page-number = pbinfo#page-number; point = point; title = it |) in
+      let () = (`publish: ` ^ extract-string (read-inline ctx it)) |> display-message in
+      PubSub.publish e section-page-topic
+    in
+    let ib = read-inline ctx it ++ inline-fil ++ hook-page-break page-hook in
+    line-break true false ctx ib
+end

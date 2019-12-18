@@ -1,0 +1,18 @@
+@import: ../pubsub
+
+module Header : sig
+  val init : 'a PubSub.topic -> unit constraint 'a :: (| title : inline-text |)
+  val build : context -> block-boxes
+end = struct
+  let-mutable current-section-title <- {}
+  let init topic =
+    let f e =
+      let () = (`subscribe:?`) |> display-message in
+      current-section-title <- e#title
+    in
+    PubSub.subscribe f topic
+  let build ctx =
+    let it = !current-section-title in
+    let ib = inline-fil ++ read-inline ctx it ++ inline-fil in
+    line-break false false ctx ib
+end

@@ -27,3 +27,5 @@ bar
 bar
 ...
 ```
+
+For more complex example, see [example](./example) directory.

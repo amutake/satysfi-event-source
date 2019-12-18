@@ -1,0 +1,38 @@
+@import: ./headings
+@import: ./header
+
+module Class : sig
+  val document : block-text -> document
+  direct +p : [inline-text] block-cmd
+end = struct
+  let-inline ctx \math m =
+    embed-math ctx m
+
+  let document bt =
+    % connects publisher and subscriber
+    let () = Header.init Headings.section-page-topic in
+    % same as standalone module
+    let ctx =
+      get-initial-context 440pt (command \math)
+        |> set-dominant-narrow-script Latin
+        |> set-dominant-wide-script Kana
+    in
+    let bb = read-block ctx bt in
+    let pagecontf _ = (|
+      text-origin = (80pt, 100pt);
+      text-height = 630pt;
+    |)
+    in
+    let pagepartsf _ = (|
+      header-origin  = (80pt, 20pt);
+      header-content = Header.build ctx; % header building
+      footer-origin  = (0pt, 0pt);
+      footer-content = block-nil;
+    |)
+    in
+    page-break A4Paper pagecontf pagepartsf bb
+
+  let-block ctx +p it =
+    let ib = inline-skip 10pt ++ read-inline ctx it ++ inline-fil in
+    line-break true true ctx ib
+end
