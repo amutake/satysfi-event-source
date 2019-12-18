@@ -1,0 +1,10 @@
+@import: ../pubsub
+@require: standalone
+
+let topic = PubSub.make () in
+let () = PubSub.subscribe display-message topic in
+let () = PubSub.publish `foo` topic in
+let () = PubSub.subscribe display-message topic in
+let () = PubSub.publish `bar` topic in
+
+standalone '<>

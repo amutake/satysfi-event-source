@@ -1,0 +1,11 @@
+name: build
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: amutake/satysfi:nightly
+    steps:
+      - uses: actions/checkout@v1
+      - run: ./test/run.sh
