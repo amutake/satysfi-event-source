@@ -3,7 +3,7 @@ satysfi-callbacks
 
 [![Build Status](https://github.com/amutake/satysfi-callbacks/workflows/build/badge.svg)](https://github.com/amutake/satysfi-callbacks/actions?query=workflow%3Abuild)
 
-A simple callback library for SATySFi. This project is under development, so the interface may break in frequently.
+A simple synchronous callback library for SATySFi. This project is under development, so the interface may change in frequently.
 
 Example
 -------
