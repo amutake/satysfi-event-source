@@ -7,7 +7,7 @@ let () = Callbacks.run `foo` c1 in
 let () = Callbacks.register display-message c1 in
 let () = Callbacks.run `bar` c1 in
 
-let t2 = Callbacks.make () in
+let c2 = Callbacks.make () in
 let () = Callbacks.run `baz` c2 in % no output
 
 standalone '<>
