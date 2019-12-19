@@ -8,10 +8,11 @@ type page-event = (|
 
 module Headings : sig
   val section-page-topic : page-event PubSub.topic
-  direct +section : [inline-text] block-cmd
+  val section-scheme : inline-text -> context -> block-boxes
 end = struct
   let section-page-topic = PubSub.make ()
-  let-block ctx +section it =
+  let section-scheme it ctx =
+    let () = display-message `section-scheme` in
     let ctx = ctx |> set-paragraph-margin 20pt 20pt |> set-font-size 20pt in
     let page-hook pbinfo point =
       let e = (| page-number = pbinfo#page-number; point = point; title = it |) in

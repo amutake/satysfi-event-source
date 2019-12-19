@@ -1,172 +1,88 @@
 @import: ./class
 
 Class.document '<
-  +section{セクション1}
+  +section{section 1}
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  }
+  +section{section 2}
+  +p{
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
-  +section{セクション2}
+  +section{section 3}
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  }
+  +section{section 4}
+  +p{
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  }
+  +section{section 5}
+  +p{
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  }
+  +section{section 6}
+  +p{
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  }
+  +section{section 7}
+  +p{
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
-  +section{セクション3}
+  +section{section 8}
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  }
+  +section{section 9}
+  +p{
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
-  +section{セクション4}
+  +section{section 10}
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  }
+  +section{section 11}
+  +p{
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
-  +section{セクション5}
+  +section{section 12}
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
   +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +section{セクション6}
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +section{セクション7}
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +section{セクション8}
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +section{セクション9}
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +section{セクション10}
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +section{セクション11}
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +section{セクション12}
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
-  }
-  +p{
-    あああああああああああああああああああああああああああああああああああああ
-    ああああああああああああああああああああああああああああ
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   }
 >

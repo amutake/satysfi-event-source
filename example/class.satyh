@@ -3,6 +3,7 @@
 
 module Class : sig
   val document : block-text -> document
+  direct +section : [inline-text] block-cmd
   direct +p : [inline-text] block-cmd
 end = struct
   let-inline ctx \math m =
@@ -25,12 +26,15 @@ end = struct
     in
     let pagepartsf _ = (|
       header-origin  = (80pt, 20pt);
-      header-content = Header.build ctx; % header building
+      header-content = Header.scheme ctx; % header building
       footer-origin  = (0pt, 0pt);
       footer-content = block-nil;
     |)
     in
     page-break A4Paper pagecontf pagepartsf bb
+
+  let-block ctx +section it =
+    Headings.section-scheme it ctx
 
   let-block ctx +p it =
     let ib = inline-skip 10pt ++ read-inline ctx it ++ inline-fil in

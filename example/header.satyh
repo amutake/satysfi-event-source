@@ -2,7 +2,7 @@
 
 module Header : sig
   val init : 'a PubSub.topic -> unit constraint 'a :: (| title : inline-text |)
-  val build : context -> block-boxes
+  val scheme : context -> block-boxes
 end = struct
   let-mutable current-section-title <- {}
   let init topic =
@@ -11,7 +11,8 @@ end = struct
       current-section-title <- e#title
     in
     PubSub.subscribe f topic
-  let build ctx =
+  let scheme ctx =
+    let () = display-message `build header` in
     let it = !current-section-title in
     let ib = inline-fil ++ read-inline ctx it ++ inline-fil in
     line-break false false ctx ib
