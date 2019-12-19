@@ -1,16 +1,16 @@
-@import: ../pubsub
+@import: ../callbacks
 
 module Header : sig
-  val init : 'a PubSub.topic -> unit constraint 'a :: (| title : inline-text |)
+  val init : 'a Callbacks.t -> unit constraint 'a :: (| title : inline-text |)
   val scheme : context -> block-boxes
 end = struct
   let-mutable current-section-title <- {}
-  let init topic =
+  let init c =
     let f e =
-      let () = (`subscribe:?`) |> display-message in
+      let () = (`callback called`) |> display-message in
       current-section-title <- e#title
     in
-    PubSub.subscribe f topic
+    Callbacks.register f c
   let scheme ctx =
     let () = display-message `build header` in
     let it = !current-section-title in

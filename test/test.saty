@@ -1,13 +1,13 @@
 @require: standalone
-@import: ../pubsub
+@import: ../callbacks
 
-let t1 = PubSub.make () in
-let () = PubSub.subscribe display-message t1 in
-let () = PubSub.publish `foo` t1 in
-let () = PubSub.subscribe display-message t1 in
-let () = PubSub.publish `bar` t1 in
+let c1 = Callbacks.make () in
+let () = Callbacks.register display-message c1 in
+let () = Callbacks.run `foo` c1 in
+let () = Callbacks.register display-message c1 in
+let () = Callbacks.run `bar` c1 in
 
-let t2 = PubSub.make () in
-let () = PubSub.publish `baz` t2 in % no output
+let t2 = Callbacks.make () in
+let () = Callbacks.run `baz` c2 in % no output
 
 standalone '<>

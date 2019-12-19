@@ -1,4 +1,4 @@
-@import: ../pubsub
+@import: ../callbacks
 
 type page-event = (|
   page-number : int;
@@ -7,17 +7,17 @@ type page-event = (|
 |)
 
 module Headings : sig
-  val section-page-topic : page-event PubSub.topic
+  val section-page-callbacks : page-event Callbacks.t
   val section-scheme : inline-text -> context -> block-boxes
 end = struct
-  let section-page-topic = PubSub.make ()
+  let section-page-callbacks = Callbacks.make ()
   let section-scheme it ctx =
     let () = display-message `section-scheme` in
     let ctx = ctx |> set-paragraph-margin 20pt 20pt |> set-font-size 20pt in
     let page-hook pbinfo point =
       let e = (| page-number = pbinfo#page-number; point = point; title = it |) in
-      let () = (`publish: ` ^ extract-string (read-inline ctx it)) |> display-message in
-      PubSub.publish e section-page-topic
+      let () = (`call: ` ^ extract-string (read-inline ctx it)) |> display-message in
+      Callbacks.run e section-page-callbacks
     in
     let ib = read-inline ctx it ++ inline-fil ++ hook-page-break page-hook in
     line-break true false ctx ib

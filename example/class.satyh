@@ -10,8 +10,8 @@ end = struct
     embed-math ctx m
 
   let document bt =
-    % connects publisher and subscriber
-    let () = Header.init Headings.section-page-topic in
+    % connects header and headings
+    let () = Header.init Headings.section-page-callbacks in
     % same as standalone module
     let ctx =
       get-initial-context 440pt (command \math)
