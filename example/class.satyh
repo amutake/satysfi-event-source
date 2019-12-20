@@ -11,7 +11,7 @@ end = struct
 
   let document bt =
     % connects header and headings
-    let () = Header.init Headings.section-page-callbacks in
+    let () = Header.init Headings.section-page-event-source in
     % same as standalone module
     let ctx =
       get-initial-context 440pt (command \math)

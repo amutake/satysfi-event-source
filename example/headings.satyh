@@ -1,4 +1,4 @@
-@import: ../callbacks
+@import: ../event-source
 
 type page-event = (|
   page-number : int;
@@ -7,17 +7,17 @@ type page-event = (|
 |)
 
 module Headings : sig
-  val section-page-callbacks : page-event Callbacks.t
+  val section-page-event-source : page-event EventSource.t
   val section-scheme : inline-text -> context -> block-boxes
 end = struct
-  let section-page-callbacks = Callbacks.make ()
+  let section-page-event-source = EventSource.make ()
   let section-scheme it ctx =
     let () = display-message `section-scheme` in
     let ctx = ctx |> set-paragraph-margin 20pt 20pt |> set-font-size 20pt in
     let page-hook pbinfo point =
       let e = (| page-number = pbinfo#page-number; point = point; title = it |) in
       let () = (`call: ` ^ extract-string (read-inline ctx it)) |> display-message in
-      Callbacks.run e section-page-callbacks
+      EventSource.dispatch e section-page-event-source
     in
     let ib = read-inline ctx it ++ inline-fil ++ hook-page-break page-hook in
     line-break true false ctx ib

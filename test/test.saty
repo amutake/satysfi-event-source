@@ -1,13 +1,13 @@
 @require: standalone
-@import: ../callbacks
+@import: ../event-source
 
-let c1 = Callbacks.make () in
-let () = Callbacks.register display-message c1 in
-let () = Callbacks.run `foo` c1 in
-let () = Callbacks.register display-message c1 in
-let () = Callbacks.run `bar` c1 in
+let s1 = EventSource.make () in
+let () = EventSource.listen display-message s1 in
+let () = EventSource.dispatch `foo` s1 in
+let () = EventSource.listen display-message s1 in
+let () = EventSource.dispatch `bar` s1 in
 
-let c2 = Callbacks.make () in
-let () = Callbacks.run `baz` c2 in % no output
+let s2 = EventSource.make () in
+let () = EventSource.dispatch `baz` s2 in % no output
 
 standalone '<>

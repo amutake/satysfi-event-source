@@ -1,0 +1,31 @@
+@require: list
+
+module EventSource : sig
+
+  % `t` is the type of event-source. `'a` means event type of the event-source.
+  type 'a t
+
+  % `make` creates new event-source.
+  val make : unit -> 'a t
+
+  % `listen` registers callback function as a listener.
+  val listen : ('a -> unit) -> 'a t -> unit
+
+  % `dispatch` calls all listeners' callback immediately.
+  val dispatch : 'a -> 'a t -> unit
+
+end = struct
+
+  type 'a t = Listeners of (('a -> unit) list) ref
+
+  let make () =
+    let-mutable fs <- [] in
+    Listeners fs
+
+  let listen f (Listeners fs) =
+    fs <- f :: !fs
+
+  let dispatch e (Listeners fs) =
+    List.iter (fun f -> f e) !fs
+
+end

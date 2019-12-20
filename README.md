@@ -1,23 +1,23 @@
-satysfi-callbacks
+satysfi-event-source
 =================
 
-[![Build Status](https://github.com/amutake/satysfi-callbacks/workflows/build/badge.svg)](https://github.com/amutake/satysfi-callbacks/actions?query=workflow%3Abuild)
+[![Build Status](https://github.com/amutake/satysfi-event-source/workflows/build/badge.svg)](https://github.com/amutake/satysfi-event-source/actions?query=workflow%3Abuild)
 
-A simple synchronous callback library for SATySFi. This project is under development, so the interface may change in frequently.
+A simple synchronous event-source library for SATySFi. This project is under development, so the interface may change in frequently.
 
 Example
 -------
 
 ```
 $ cat test.saty
-@import: ./callbacks
 @require: standalone
+@import: ./event-source
 
-let c = Callbacks.make () in
-let () = Callbacks.register display-message c in
-let () = Callbacks.run `foo` c in
-let () = Callbacks.register display-message c in
-let () = Callbacks.run `bar` c in
+let s  = EventSource.make () in                   % `make` creates new event-source.
+let () = EventSource.listen display-message s in  % `listen` registers callback function as a listener.
+let () = EventSource.dispatch `foo` s in          % `dispatch` calls all listeners' callback immediately.
+let () = EventSource.listen display-message s in
+let () = EventSource.dispatch `bar` s in
 
 standalone '<>
 $ docker run --rm -it -v $(pwd):/satysfi amutake/satysfi:nightly satysfi test.saty
